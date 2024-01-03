@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>April - CV</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="theme-color" content="#000000">
+	<link rel="manifest" href="manifest.json">
+
+	<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-messaging.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html"><span>A</span>prilmk</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+			  <li class="nav-item"><a href="#notification-section" class="nav-link"><span>Notification</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section class="hero-wrap js-fullheight">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
+          <div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
+          	<div class="text text-center">
+          		<span class="subheading">Hey! I am</span>
+		  				<h1>Apriliani Maulidya Khasanah</h1>
+							</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mouse">
+				<a href="#" class="mouse-icon">
+					<div class="mouse-wheel"><span class="ion-ios-arrow-round-down"></span></div>
+				</a>
+			</div>
+    </section>
+
+	<section class="ftco-section ftco-notification" id="notification-section">
+    	<div class="container-fluid px-md-0">
+    		<div class="row no-gutters justify-content-center pb-5">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Notification</h1>
+            <h2 class="mb-4">Notification</h2>
+			<div class="about__container bd-grid">
+				<div class="about__img">
+					<img src="img/bel.png" alt="">
+					<br />
+		  <div id="token"></div>
+		  <div id="msg"></div>
+		  <div id="notis"></div>
+		  <div id="err"></div>
+		  <button id="enableNotifications">🔔 Enable Notification</button>
+    </section>
+
+	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-3">
+			<div class="col-md-7 heading-section text-center ftco-animate">
+			  <h1 class="big big-2">Contact</h1>
+			  <h2 class="mb-4">Contact Me</h2>
+			  <p>If you need creative services, please feel free to contact me through the contact information in the "Contact Me" section.</p>
+			</div>
+		  </div>
+  
+		  <div class="row no-gutters block-9">
+			<div class="col-md-6 order-md-last d-flex">
+			  <form id="komentar" class="bg-light p-4 p-md-5 contact-form">
+				<div class="form-group" id="form-group">
+				  <input type="text" name="name" id="name" class="form-control" placeholder="Name">
+				</div>
+				<div class="form-group">
+				  <input type="text" name="email" id="email" class="form-control" placeholder="Email">
+				</div>
+				<div class="form-group">
+				  <input type="text" name="subject" id="subject" class="form-control" placeholder="Subject">
+				</div>
+				<div class="form-group">
+				  <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+				</div>
+				<div class="form-group">
+				  <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+				</div>
+			  </form>
+			</div>
+  
+			<div class="col-md-6 d-flex">
+				<div class="img" style="background-image: url(images/April.png);"></div>
+			</div>
+		  </div>
+		</div>
+	  </section>
+
+    <section class="ftco-section ftco-no-pb goto-here" id="resume-section">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-md-3">
+				    <nav id="navi">
+					    <ul>
+					      <li><a href="#page-1">Education</a></li>
+					      <li><a href="#page-2">Experience</a></li>
+					      <li><a href="#page-3">Skills</a></li>
+					      <li><a href="#page-4">Awards</a></li>
+					    </ul>
+					  </nav>
+					</div>
+					<div class="col-md-9">
+					  <div id="page-1" class= "page one">
+					  	<h2 class="heading">Education</h2>
+					    <div class="resume-wrap d-flex ftco-animate">
+					    	<div class="icon d-flex align-items-center justify-content-center">
+					    		<span class="flaticon-ideas"></span>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<span class="date">2021-Now</span>
+		    					<h2>Information Systems Major</h2>
+		    					<span class="position">STMIK TEGAL</span>
+		    					<p>STMIK TEGAL is one of the first Informatics and Computer-based campuses in the West Pantura Region, Central Java. 
+								The majors available in our undergraduate programme are Information Systems and Informatics Engineering with several fields of interest available in each department.</p>
+	    					</div>
+	    				</div>
+	    				<div class="resume-wrap d-flex ftco-animate">
+	    					<div class="icon d-flex align-items-center justify-content-center">
+					    		<span class="flaticon-ideas"></span>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<span class="date">2018-2021</span>
+		    					<h2>MIPA Major</h2>
+		    					<span class="position">SMA Negeri 2 Tegal</span>
+		    					<p>SMA Negeri 2 Tegal is a reputable secondary school in Tegal city, 
+								providing a supportive educational environment and a wide range of extracurricular activities for student development.</p>
+		    				</div>
+	    				</div>
+	    	
+					  <div id="page-2" class= "page two">
+					  	<h2 class="heading">Experience</h2>
+					    <div class="resume-wrap d-flex ftco-animate">
+					    	<div class="icon d-flex align-items-center justify-content-center">
+					    		<span class="flaticon-ideas"></span>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<span class="date">2021-2022</span>
+		    					<h2>Assistant Photographer</h2>
+		    					<span class="position">XYZ Photography Studio</span>
+		    					<p>Assist in setting up the shooting location, organising logistics, and assisting in styling the subject or model to look optimal in the shooting field.</p>
+		    				</div>
+	    				</div>
+	    				<div class="resume-wrap d-flex ftco-animate">
+	    					<div class="icon d-flex align-items-center justify-content-center">
+					    		<span class="flaticon-ideas"></span>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<span class="date">2020-2021</span>
+		    					<h2>Editor</h2>
+		    					<span class="position">Digital Media Company DEF</span>
+		    					<p>Editing online content, such as articles, blogs, news or online marketing.</p>
+		    				</div>
+	    				</div>
+	    				<div class="resume-wrap d-flex ftco-animate">
+	    					<div class="icon d-flex align-items-center justify-content-center">
+					    		<span class="flaticon-ideas"></span>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<span class="date">2020-2021</span>
+		    					<h2>Content Writer</h2>
+		    					<span class="position">YZA Social Media</span>
+		    					<p>Write and manage content for social media platforms, including text for posts, captions, and other visual material.</p>
+		    				</div>
+	    				</div>
+	    				<div class="resume-wrap d-flex ftco-animate">
+	    					<div class="icon d-flex align-items-center justify-content-center">
+					    		<span class="flaticon-ideas"></span>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<span class="date">2021-2022</span>
+		    					<h2>Copywriter</h2>
+		    					<span class="position">ABC Digital Marketing Company</span>
+		    					<p>Develop SEO-friendly content, copy for websites, and online marketing materials.</p>
+		    				</div>
+	    				</div>
+	    				<div class="resume-wrap d-flex ftco-animate">
+	    					<div class="icon d-flex align-items-center justify-content-center">
+					    		<span class="flaticon-ideas"></span>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<span class="date">2021-2022</span>
+		    					<h2>Social Media Specialist</h2>
+		    					<span class="position">YZA Tourism Company</span>
+		    					<p>Manage social media accounts to promote tourist destinations, design special campaigns, and interact with travellers.</p>
+		    				</div>
+	    				</div>
+	    				<div class="resume-wrap d-flex ftco-animate">
+	    					<div class="icon d-flex align-items-center justify-content-center">
+					    		<span class="flaticon-ideas"></span>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<span class="date">2022-Now</span>
+		    					<h2>Content Creator</h2>
+		    					<span class="position">Freelance</span>
+		    					<p>Create visual or video content to publish directly to followers.</p>
+		    				</div>
+	    				</div>
+					  </div>
+					  <div id="page-3" class= "page three">
+					  	<h2 class="heading">Skills</h2>
+					  	<div class="row progress-circle mb-5">
+					  		<div class="col-lg-4 mb-4">
+						      <div class="bg-white rounded-lg shadow p-4">
+						        <h2 class="h5 font-weight-bold text-center mb-4">Canva</h2>
+
+						        <!-- Progress bar 1 -->
+						        <div class="progress mx-auto" data-value='90'>
+						          <span class="progress-left">
+                        <span class="progress-bar border-primary"></span>
+						          </span>
+						          <span class="progress-right">
+                        <span class="progress-bar border-primary"></span>
+						          </span>
+						          <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+						            <div class="h2 font-weight-bold">90<sup class="small">%</sup></div>
+						          </div>
+						        </div>
+						        <!-- END -->
+
+						        <!-- Demo info -->
+						        <div class="row text-center mt-4">
+						          <div class="col-6 border-right">
+						            <div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last week</span>
+						          </div>
+						          <div class="col-6">
+						            <div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last month</span>
+						          </div>
+						        </div>
+						        <!-- END -->
+						      </div>
+						    </div>
+
+						    <div class="col-lg-4 mb-4">
+						      <div class="bg-white rounded-lg shadow p-4">
+						        <h2 class="h5 font-weight-bold text-center mb-4">Photoshop</h2>
+
+						        <!-- Progress bar 1 -->
+						        <div class="progress mx-auto" data-value='80'>
+						          <span class="progress-left">
+                        <span class="progress-bar border-primary"></span>
+						          </span>
+						          <span class="progress-right">
+                        <span class="progress-bar border-primary"></span>
+						          </span>
+						          <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+						            <div class="h2 font-weight-bold">80<sup class="small">%</sup></div>
+						          </div>
+						        </div>
+						        <!-- END -->
+
+						        <!-- Demo info -->
+						        <div class="row text-center mt-4">
+						          <div class="col-6 border-right">
+						            <div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last week</span>
+						          </div>
+						          <div class="col-6">
+						            <div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last month</span>
+						          </div>
+						        </div>
+						        <!-- END -->
+						      </div>
+						    </div>
+
+						    <div class="col-lg-4 mb-4">
+						      <div class="bg-white rounded-lg shadow p-4">
+						        <h2 class="h5 font-weight-bold text-center mb-4">iMovie</h2>
+
+						        <!-- Progress bar 1 -->
+						        <div class="progress mx-auto" data-value='75'>
+						          <span class="progress-left">
+                        <span class="progress-bar border-primary"></span>
+						          </span>
+						          <span class="progress-right">
+                        <span class="progress-bar border-primary"></span>
+						          </span>
+						          <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+						            <div class="h2 font-weight-bold">75<sup class="small">%</sup></div>
+						          </div>
+						        </div>
+						        <!-- END -->
+
+						        <!-- Demo info -->
+						        <div class="row text-center mt-4">
+						          <div class="col-6 border-right">
+						            <div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last week</span>
+						          </div>
+						          <div class="col-6">
+						            <div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last month</span>
+						          </div>
+						        </div>
+						        <!-- END -->
+						      </div>
+						    </div>
+					  	</div>
+					  	<div class="row">
+					  		<div class="col-md-6 animate-box">
+									<div class="progress-wrap ftco-animate">
+										<h3>Rigour</h3>
+										<div class="progress">
+										 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="90"
+										  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
+										    <span>90%</span>
+										  	</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 animate-box">
+									<div class="progress-wrap ftco-animate">
+										<h3>Interaction Skills</h3>
+										<div class="progress">
+										 	<div class="progress-bar color-2" role="progressbar" aria-valuenow="85"
+										  	aria-valuemin="0" aria-valuemax="100" style="width:85%">
+										    <span>85%</span>
+										  	</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 animate-box">
+									<div class="progress-wrap ftco-animate">
+										<h3>Creativity</h3>
+										<div class="progress">
+										 	<div class="progress-bar color-3" role="progressbar" aria-valuenow="95"
+										  	aria-valuemin="0" aria-valuemax="100" style="width:95%">
+										    <span>95%</span>
+										  	</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 animate-box">
+									<div class="progress-wrap ftco-animate">
+										<h3>Equipment Handling</h3>
+										<div class="progress">
+										 	<div class="progress-bar color-4" role="progressbar" aria-valuenow="90"
+										  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
+										    <span>90%</span>
+										  	</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 animate-box">
+									<div class="progress-wrap ftco-animate">
+										<h3>Data Analysis</h3>
+										<div class="progress">
+										 	<div class="progress-bar color-5" role="progressbar" aria-valuenow="70"
+										  	aria-valuemin="0" aria-valuemax="100" style="width:70%">
+										    <span>70%</span>
+										  	</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 animate-box">
+									<div class="progress-wrap ftco-animate">
+										<h3>SEO</h3>
+										<div class="progress">
+										 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
+										  	aria-valuemin="0" aria-valuemax="100" style="width:80%">
+										    <span>80%</span>
+										  	</div>
+										</div>
+									</div>
+								</div>
+					  	</div>
+					  </div>
+					  <div id="page-4" class= "page four">
+					    <h2 class="heading">Awards</h2>
+					    <div class="resume-wrap d-flex ftco-animate">
+					    	<div class="icon d-flex align-items-center justify-content-center">
+					    		<span class="flaticon-ideas"></span>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<span class="date">2021-2022</span>
+		    					<h2>Outstanding Contribution to Photo Production</h2>
+		    					<span class="position">Local Arts Festival</span>
+		    					<p>Feeling truly grateful for the award as assistant photographer, which recognises the contribution in ensuring the success of each shoot.</p>
+	    					</div>
+	    				</div>
+	    				<div class="resume-wrap d-flex ftco-animate">
+	    					<div class="icon d-flex align-items-center justify-content-center">
+					    		<span class="flaticon-ideas"></span>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<span class="date">2020-2021</span>
+		    					<h2>Best Editor</h2>
+		    					<span class="position">Digital Media Company DEF</span>
+		    					<p>Gratitude enveloped my heart when I was awarded as an editor, an appreciation for the meticulousness in editing and improving the quality of the content.</p>
+		    				</div>
+	    				</div>
+	    				<div class="resume-wrap d-flex ftco-animate">
+	    					<div class="icon d-flex align-items-center justify-content-center">
+					    		<span class="flaticon-ideas"></span>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<span class="date">2021-2022</span>
+		    					<h2>Best Articles of January</h2>
+		    					<span class="position">Online Writing</span>
+		    					<p>A deep sense of gratitude washed over me as an honoured content writer, confirming that my words have a positive impact and are of value.</p>
+		    				</div>
+	    				</div>
+	    				<div class="resume-wrap d-flex ftco-animate">
+	    					<div class="icon d-flex align-items-center justify-content-center">
+					    		<span class="flaticon-ideas"></span>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<span class="date">2022-Now</span>
+		    					<h2>Best Creative Video</h2>
+		    					<span class="position">Festival <Cmd></Cmd>reativitas Online</span>
+		    					<p>As a content creator, this award is a token of gratitude for my efforts in creating and managing content that successfully reaches and engages audiences.</p>
+		    				</div>
+	    				</div>
+					  </div>
+					</div>
+			  </div>
+    	</div>
+    </section>
+
+    <section class="ftco-section" id="resume-section">
+    	<div class="container-fluid px-md-5">
+    		<div class="row justify-content-center py-5 mt-5">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Services</h2>
+            <p>Provide creative support to improve quality and consistency in work</p>
+          </div>
+        </div>
+    		<div class="row">
+					<div class="col-md-4 text-center d-flex ftco-animate">
+						<a href="#" class="services-1 shadow">
+							<span class="icon">
+								<i class="flaticon-analysis"></i>
+							</span>
+							<div class="desc">
+								<h3 class="mb-5">Assistant Photographer</h3>
+								<p>Assist in setting up equipment and ensuring the smooth running of the shoot to create stunning visual results.</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 text-center d-flex ftco-animate">
+						<a href="#" class="services-1 shadow">
+							<span class="icon">
+								<i class="flaticon-flasks"></i>
+							</span>
+							<div class="desc">
+								<h3 class="mb-5">Editor</h3>
+								<p>Copy and content editing, ensuring the quality of the writing and the message conveyed.</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 text-center d-flex ftco-animate">
+						<a href="#" class="services-1 shadow">
+							<span class="icon">
+								<i class="flaticon-ideas"></i>
+							</span>
+							<div class="desc">
+								<h3 class="mb-5">Content Writer</h3>
+								<p>Create engaging and informative writing to meet the needs of various projects and clients.</p>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 text-center d-flex ftco-animate">
+						<a href="#" class="services-1 shadow">
+							<span class="icon">
+								<i class="flaticon-innovation"></i>
+							</span>
+							<div class="desc">
+								<h3 class="mb-5">Copywriter</h3>
+								<p>Creating persuasive and engaging text for advertising campaigns or marketing materials, building effective messages.</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 text-center d-flex ftco-animate">
+						<a href="#" class="services-1 shadow">
+							<span class="icon">
+								<i class="flaticon-ux-design"></i>
+							</span>
+							<div class="desc">
+								<h3 class="mb-5">Social Media Specialist</h3>
+								<p>Devise strategies and create relevant content to strengthen brand presence on various social platforms.</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 text-center d-flex ftco-animate">
+						<a href="#" class="services-1 shadow">
+							<span class="icon">
+								<i class="flaticon-idea"></i>
+							</span>
+							<div class="desc">
+								<h3 class="mb-5">Content Creator</h3>
+								<p>Creative and engaging visual or audio content creation, building brand identity or personal expression.</p>
+							</div>
+						</a>
+					</div>
+				</div>
+    	</div>
+    </section>
+
+    <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+    	<div class="container-fluid px-md-5">
+				<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18 shadow">
+              <div class="text">
+                <strong class="number" data-number="4">0</strong>
+                <span>Awards</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18 shadow">
+              <div class="text">
+                <strong class="number" data-number="6">0</strong>
+                <span>Complete Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18 shadow">
+              <div class="text">
+                <strong class="number" data-number="10">0</strong>
+                <span>Happy Customers</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18 shadow">
+              <div class="text">
+                <strong class="number" data-number="15">0</strong>
+                <span>Cups of coffee</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section ftco-hireme img" style="background-image: url(images/bg_1.jpg)">
+    	<div class="overlay"></div>
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>Here<span> available</spa> freelancers</h2>
+						<p>If you would like to join our team, please contact us via the contact details provided.</p>
+						<p class="mb-0"><a href="#" class="btn btn-primary py-3 px-5">Contact</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb" id="resume-section">
+			<div class="container">
+				<div class="row d-flex no-gutters">
+					<div class="col-md-6 col-lg-6 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay"></div>
+							<div class="img d-flex align-self-stretch align-items-center" style="background-image:url(images/April.png);">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-6 pl-md-5 py-5">
+						<div class="row justify-content-start pb-3">
+					  <div class="col-md-12 heading-section ftco-animate">
+						  <h1 class="big">Resume</h1>
+						<h2 class="mb-4">About Me</h2>
+						<p>I am an active 5th semester student at Tegal School of Informatics & Computer Management. 
+						I am interested in the field of art and design, because I have good technical skills and creativity.</p>
+						<ul class="about-info mt-4 px-md-0 px-2">
+							<li class="d-flex"><span>Name:</span> <span>Apriliani Maulidya Khasanah</span></li>
+							<li class="d-flex"><span>Date of birth:</span> <span>April 17, 2003</span></li>
+							<li class="d-flex"><span>Address:</span> <span>Jl. Metro, Kel. Debong Lor, Kec. Tegal Barat, Kota Tegal, Jawa Tengah, Indonesia</span></li>
+							<li class="d-flex"><span>Email:</span> <span>aprilianimk@gmail.com</span></li>
+							<li class="d-flex"><span>Phone: </span> <span>+62-896-6685-7794</span></li>
+						</ul>
+					  </div>
+					</div>
+		</section>
+		
+    <footer class="ftco-footer ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">About Resume</h2>
+              <p>Experience in photography, content editing, and creative writing, with strong skills in social media strategy.</p>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2">Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
+				<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Notification</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
+				<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Resume</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Services</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Services</h2>
+              <ul class="list-unstyled">
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Assistant Photographer</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Editor</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Content Writer</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Copywriter</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Social Media Specialist</a></li>
+				<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Content Creator</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Have a question?</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="icon icon-map-marker"></span><span class="text">Jl. Metro, Kel. Debong Lor, Kec. Tegal Barat, Jawa Tengah</span></li>
+	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+62 896 6685 7794</span></a></li>
+	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">aprilianimk@gmail.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This CV is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">April</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+	<!-- <script>
+        // Minta izin notifikasi
+    if ('Notification' in window) {
+      Notification.requestPermission()
+        .then(function (permission) {
+          if (permission === 'granted') {
+            showNotification('Selamat datang!', 'Terima kasih telah menggunakan PWA ini.');
+            alert('berhasil di izinkan');
+          }
+          else if (permission === 'denied') {
+            // Izin diblokir
+            alert('tidak dapat akses');
+          }
+        });
+    }
+    
+    // Fungsi untuk menampilkan notifikasi
+    function showNotification(title, message) {
+      if ('Notification' in window && Notification.permission === 'granted') {
+        navigator.serviceWorker.ready.then(function (registration) {
+          registration.showNotification(title, {
+            body: message,
+         
+          });
+        });
+      }
+    }
+      </script> -->
+    
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="/db.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+
+ <script src="/main.js"></script>
+
+    
+  </body>
+</html>
